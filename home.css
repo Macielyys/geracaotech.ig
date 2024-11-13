@@ -1,0 +1,107 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #951d5f, #000);
+  }
+  
+  body {
+    font-family: 'Inter',Helvetica,Arial,system-ui,-apple-system;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #951d5f, #000);
+  }
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza horizontalmente */
+    flex-direction: column; /* Coluna para alinhar tudo verticalmente */
+    margin-bottom: 25px;
+    text-align: center; /* Alinha o texto centralmente */
+    
+}
+
+.logo {
+    width: 96px;
+    height: 96px;
+    border-radius: 9999px;
+    overflow: hidden;
+    margin-right: 0; /* Removi o margin-right para centralizar */
+    margin-top: 65px;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -.4px;
+    margin-top: 10px; /* Espaço superior para separar do logo */
+}
+
+.links {
+    display: flex;
+    flex-direction: column; /* Para botões um abaixo do outro */
+    align-items: center; /* Centraliza os botões horizontalmente */
+    margin-top: 20px; /* Espaço entre o username e os botões */
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 580px; /* Largura maior para os botões */
+    height: 64px; /* Altura dos botões */
+    margin: 10px 0; /* Espaçamento entre os botões */
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do texto do pai */
+}
+
+.icon {
+    font-size: 20px;
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.p {
+    font-size: 16px;
+    color: black;
+}
+
+.links a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: inherit; /* Herda a cor do texto do pai */
+    font-family: "Inter";
+    font-weight: 500;
+    
+
+}
+
+/* Media queries for small screens (smartphones) */
+@media (max-width: 768px) {
+  .logo {
+    width: 96x;
+    height: 96px;
+  }
+
+  .username {
+    font-size: 16px;
+  }
+
+  .link {
+    width: 364px; /* Reduce width for small screens */
+    height: 64px; /* Reduce height for small screens */
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+}
